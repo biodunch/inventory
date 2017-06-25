@@ -13,6 +13,7 @@ import { connect } from 'react-redux'
 import styles from './Styles/LoginScreenStyles'
 import {Images, Metrics} from '../Themes'
 import LoginActions from '../Redux/LoginRedux'
+import FullButton from '../Components/FullButton'
 
 class LoginScreen extends React.Component {
   static propTypes = {
@@ -28,7 +29,7 @@ class LoginScreen extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
-      username: 'reactnative@infinite.red',
+      username: 'admin',
       password: 'password',
       visibleHeight: Metrics.screenHeight,
       topLogo: { width: Metrics.screenWidth }
@@ -91,6 +92,7 @@ class LoginScreen extends React.Component {
   }
 
   render () {
+    const { navigate } = this.props.navigation
     const { username, password } = this.state
     const { fetching } = this.props
     const editable = !fetching
@@ -129,22 +131,22 @@ class LoginScreen extends React.Component {
               autoCorrect={false}
               secureTextEntry
               onChangeText={this.handleChangePassword}
-              underlineColorAndroid='transparent'
+              underlineColorAndroid='red'
               onSubmitEditing={this.handlePressLogin}
-              placeholder='Password' />
+              placeholder='Password'
+              // style={{borderBottomWidth:1}}
+             />
           </View>
 
           <View style={[styles.loginRow]}>
-            <TouchableOpacity style={styles.loginButtonWrapper} onPress={this.handlePressLogin}>
+            <TouchableOpacity style={styles.loginButtonWrapper} onPress={() =>
+              navigate('DashboardScreen', { name: 'Admin' })
+            }>
               <View style={styles.loginButton}>
                 <Text style={styles.loginText}>Sign In</Text>
               </View>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.loginButtonWrapper} onPress={() => this.props.navigation.goBack()}>
-              <View style={styles.loginButton}>
-                <Text style={styles.loginText}>Cancel</Text>
-              </View>
-            </TouchableOpacity>
+
           </View>
         </View>
 

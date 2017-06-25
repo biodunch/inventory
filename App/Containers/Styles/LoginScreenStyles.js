@@ -4,7 +4,7 @@ import { Colors, Metrics } from '../../Themes'
 export default StyleSheet.create({
   container: {
     paddingTop: 70,
-    backgroundColor: Colors.background
+    backgroundColor: Colors.steel
   },
   form: {
     backgroundColor: Colors.snow,
@@ -16,11 +16,11 @@ export default StyleSheet.create({
     paddingHorizontal: Metrics.doubleBaseMargin
   },
   rowLabel: {
-    color: Colors.charcoal
+    color: Colors.error
   },
   textInput: {
     height: 40,
-    color: Colors.coal
+    color: Colors.coal,
   },
   textInputReadonly: {
     height: 40,
@@ -29,7 +29,8 @@ export default StyleSheet.create({
   loginRow: {
     paddingBottom: Metrics.doubleBaseMargin,
     paddingHorizontal: Metrics.doubleBaseMargin,
-    flexDirection: 'row'
+    flexDirection: 'row',
+    borderBottomWidth:6
   },
   loginButtonWrapper: {
     flex: 1
@@ -37,8 +38,8 @@ export default StyleSheet.create({
   loginButton: {
     flex: 1,
     borderWidth: 1,
-    borderColor: Colors.charcoal,
-    backgroundColor: Colors.panther,
+    borderColor: Colors.ember,
+    backgroundColor: Colors.ember,
     padding: 6
   },
   loginText: {

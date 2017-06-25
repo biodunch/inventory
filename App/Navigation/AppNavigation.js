@@ -1,12 +1,18 @@
 import { StackNavigator } from 'react-navigation'
+import ViewCustomersScreen from '../Containers/ViewCustomersScreen'
+import DashboardScreen from '../Containers/DashboardScreen'
 import LaunchScreen from '../Containers/LaunchScreen'
 import LoginScreen from '../Containers/LoginScreen'
+// import addCustomerScreen from '../Containers/addCustomerScreen'
 
 import styles from './Styles/NavigationStyles'
 
 // Manifest of possible screens
 const PrimaryNav = StackNavigator({
+  ViewCustomersScreen: { screen: ViewCustomersScreen },
+  DashboardScreen: { screen: DashboardScreen },
   LaunchScreen: { screen: LaunchScreen },
+  // AddCustomerScreen: { screen : addCustomerScreen },
   LoginScreen: {
     screen: LoginScreen,
     navigationOptions: { title: 'Login' }
@@ -14,7 +20,7 @@ const PrimaryNav = StackNavigator({
 }, {
   // Default config for all screens
   headerMode: 'none',
-  initialRouteName: 'LaunchScreen',
+  initialRouteName: 'LoginScreen',
   navigationOptions: {
     headerStyle: styles.header
   }
