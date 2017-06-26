@@ -72,7 +72,7 @@ class ListviewSectionsExample extends React.Component {
       backgroundColor: rowData.color,
       borderRadius: Metrics.smallMargin}}
       onPress={() =>
-        n.navigate('ViewCustomersScreen', { name: 'Jane' })
+        n.navigate('AddCustomerScreen', { name: 'Jane' })
       }>
         {/* {myIcon} */}
         <Text style={styles.boldLabel}> {rowData.title}</Text>

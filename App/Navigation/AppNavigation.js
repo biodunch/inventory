@@ -1,4 +1,5 @@
 import { StackNavigator } from 'react-navigation'
+import AddCustomerScreen from '../Containers/AddCustomerScreen'
 import ViewCustomersScreen from '../Containers/ViewCustomersScreen'
 import DashboardScreen from '../Containers/DashboardScreen'
 import LaunchScreen from '../Containers/LaunchScreen'
@@ -9,6 +10,7 @@ import styles from './Styles/NavigationStyles'
 
 // Manifest of possible screens
 const PrimaryNav = StackNavigator({
+  AddCustomerScreen: { screen: AddCustomerScreen },
   ViewCustomersScreen: { screen: ViewCustomersScreen },
   DashboardScreen: { screen: DashboardScreen },
   LaunchScreen: { screen: LaunchScreen },
