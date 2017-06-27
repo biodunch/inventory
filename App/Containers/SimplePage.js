@@ -28,7 +28,7 @@ class ListviewSectionsExample extends React.Component {
     }
 
     n = props.transition
-    console.log(n)
+    // console.log(n)
     /* ***********************************************************
     * STEP 2
     * Teach datasource how to detect if rows are different
@@ -71,8 +71,25 @@ class ListviewSectionsExample extends React.Component {
       margin: Metrics.baseMargin,
       backgroundColor: rowData.color,
       borderRadius: Metrics.smallMargin}}
-      onPress={() =>
-        n.navigate('AddCustomerScreen', { name: 'Jane' })
+      onPress={() =>{
+        let location = ''
+        switch(rowData.mode){
+          case 'ADD':
+            location = 'AddCustomerScreen'
+            break;
+          case 'VIEW':
+            location = 'ViewCustomersScreen'
+            break;
+          case 'MANAGE':
+            location = 'LaunchScreen'
+            break;
+          case 'DELETE':
+            location = 'LaunchScreen'
+            break;
+        }
+        n.navigate(location, { name: 'Jane' })
+      }
+
       }>
         {/* {myIcon} */}
         <Text style={styles.boldLabel}> {rowData.title}</Text>

@@ -34,24 +34,24 @@ export default class TopBarTextExample extends PureComponent<void, *, State> {
     routes: [
       { key: '1', title: 'Distributors',
         grid :[
-          {title: 'Add Distributors', color: 'green',mode : 'ADD'},
-          {title: ' Manage Distributors', color: 'brown', mode : 'MANAGE'},
-          {title: ' Track Sales', color: 'blue', mode : 'VIEW'},
-          {title: ' Delete Distributors', color: '#e73536', mode : 'DELETE'}
+          {title: 'Add Distributor', color: '#66DE99',mode : 'ADD'},
+          {title: ' Manage Distributor', color: 'brown', mode : 'MANAGE'},
+          {title: ' Track Sales', color: '#4075C0', mode : 'VIEW'},
+          {title: ' Delete Distributor', color: '#e73536', mode : 'DELETE'}
         ]
       },
       { key: '2', title: 'Customers',
       grid :[
-        {title: 'Add Sec. Customer', color: 'green', mode : 'ADD'},
-        {title: ' View Inventory', color: '#e73536', mode : 'MANAGE'},
-        {title: ' Track Purchases', color: 'blue', mode : 'VIEW'},
+        {title: 'Add Sec. Customer', color: '#88ED47', mode : 'ADD'},
+        {title: ' View Inventory', color: '#935765', mode : 'MANAGE'},
+        {title: ' Track Purchases', color: '#4075C0', mode : 'VIEW'},
         {title: ' Delete Sec. Customer', color: 'brown',mode : 'DELETE' }
       ] },
       { key: '3', title: 'Products',
       grid :[
-        {title: 'Approve Products', color: 'green',mode : 'ADD'},
-        {title: ' Manage Products', color: 'blue', mode : 'MANAGE'},
-        {title: ' View Sales', color: 'brown', mode : 'VIEW'},
+        {title: 'Approve Products', color: '#88ED47',mode : 'ADD'},
+        {title: ' Manage Products', color: '#935765', mode : 'MANAGE'},
+        {title: ' View Sales', color: '#4075C0', mode : 'VIEW'},
         {title: ' Delete Products', color: '#e73536', mode : 'DELETE'}
       ] },
     ],

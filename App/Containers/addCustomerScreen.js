@@ -21,30 +21,36 @@ class AddCustomerScreen extends React.Component {
   render () {
     return (
       <ScrollView style={styles.container}>
-        <Form>
-          <FieldsContainer>
-            <Fieldset label="Contact details" style={{backgroundColor:'red'}}>
+        <Form >
+          <FieldsContainer style={{marginTop:30}}>
+            <Fieldset label="Customer Details" style={{backgroundColor:'red'}}>
               <FormGroup >
-                <Label>First name</Label>
+                <Label>Customer name</Label>
                 <Input placeholder="Esben" onChangeText={this.onFirstNameChange} />
               </FormGroup>
               <FormGroup>
-                <Label>Email</Label>
+                <Label>Entry Date</Label>
                 <Input placeholder="esbenspetersen@gmail.com" onChangeText={this.onEmailChange} />
               </FormGroup>
-            </Fieldset>
-            <Fieldset label="Password" last>
               <FormGroup>
-                <Label>Password</Label>
-                <Input placeholder="Enter a password" onChangeText={this.onPasswordChange} />
+                <Label>FSM</Label>
+                <Input placeholder="FSM" onChangeText={this.onEmailChange} />
               </FormGroup>
               <FormGroup>
-                <Label>Repeat password</Label>
-                <Input placeholder="Repeat your password" onChangeText={this.onRepeatPasswordChange} />
+                <Label>Location</Label>
+                <Input placeholder="Oyo " onChangeText={this.onEmailChange} />
               </FormGroup>
-              <FormGroup border={false}>
-                <Label>Save my password</Label>
-                <Switch onValueChange={this.toggleSaveMyPassword} />
+              <FormGroup>
+                <Label>Phone Number</Label>
+                <Input placeholder="0123456789" onChangeText={this.onEmailChange} />
+              </FormGroup>
+              <FormGroup>
+                <Label>R O</Label>
+                <Input placeholder="R O" onChangeText={this.onEmailChange} />
+              </FormGroup>
+              <FormGroup>
+                <Label>State</Label>
+                <Input placeholder="Lagos" onChangeText={this.onEmailChange} />
               </FormGroup>
             </Fieldset>
           </FieldsContainer>
