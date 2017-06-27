@@ -16,8 +16,12 @@ import {
 } from 'react-native-clean-form'
 // Styles
 import styles from './Styles/AddCustomerScreenStyle'
+let n ={}
 
 class AddCustomerScreen extends React.Component {
+  componentWillMount(){
+    n = this.props.navigation;
+  }
   render () {
     return (
       <ScrollView style={styles.container}>
@@ -54,8 +58,8 @@ class AddCustomerScreen extends React.Component {
               </FormGroup>
             </Fieldset>
           </FieldsContainer>
-          <ActionsContainer>
-            <Button icon="md-checkmark" iconPlacement="right" onPress={this.save}>Save</Button>
+          <ActionsContainer >
+            <Button icon="md-checkmark" iconPlacement="right" onPress={()=>{n.navigate('DashboardScreen')}} >Save</Button>
           </ActionsContainer>
         </Form>
       </ScrollView>
