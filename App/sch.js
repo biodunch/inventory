@@ -1,4 +1,4 @@
-,Row Labels,Status,weight(g),configration
+var arr =`RowLabels,Status,weight,configration
 1,FG Banana Star 28 G X 72,Active,28,72pk
 2,FG BANANA STAR 60G X 48,Active,60,48pk
 3,Fg Cabin 12g x 72,Active,12,72pk
@@ -29,4 +29,6 @@
 28,Fg Vino Banana 14gx124,Active,14,124pk
 29,Fg Vino Coconut 14g x 124,Active,14,124pk
 30,Fg Vino Orange 14gx124,Active,14,124pk
-31,Fg Vino Strawberry 14g x 124,Active,14,124pk
+31,Fg Vino Strawberry 14g x 124,Active,14,124pk`
+
+module.exports = arr

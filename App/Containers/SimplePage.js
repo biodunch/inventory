@@ -81,10 +81,19 @@ class ListviewSectionsExample extends React.Component {
             location = 'ViewCustomersScreen'
             break;
           case 'MANAGE':
-            location = 'LaunchScreen'
+            location = 'ViewSalesScreen'
+            break;
+          case 'SALES':
+            location = 'ViewSalesScreen'
             break;
           case 'DELETE':
             location = 'LaunchScreen'
+            break;
+          case 'PRODUCT':
+            location = 'ViewProductScreen'
+            break;
+          case 'APPROVE':
+            location = 'ApproveProductScreen'
             break;
         }
         n.navigate(location, { name: 'Jane' })

@@ -1,4 +1,7 @@
 import { StackNavigator } from 'react-navigation'
+import ApproveProductScreen from '../Containers/ApproveProductScreen'
+import ViewSalesScreen from '../Containers/ViewSalesScreen'
+import ViewProductScreen from '../Containers/ViewProductScreen'
 import AddCustomerScreen from '../Containers/AddCustomerScreen'
 import ViewCustomersScreen from '../Containers/ViewCustomersScreen'
 import DashboardScreen from '../Containers/DashboardScreen'
@@ -10,6 +13,9 @@ import styles from './Styles/NavigationStyles'
 
 // Manifest of possible screens
 const PrimaryNav = StackNavigator({
+  ApproveProductScreen: { screen: ApproveProductScreen },
+  ViewSalesScreen: { screen: ViewSalesScreen },
+  ViewProductScreen: { screen: ViewProductScreen },
   AddCustomerScreen: { screen: AddCustomerScreen },
   ViewCustomersScreen: { screen: ViewCustomersScreen },
   DashboardScreen: { screen: DashboardScreen },

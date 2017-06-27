@@ -7,10 +7,10 @@ import Icon from 'react-native-vector-icons/FontAwesome'
 // For empty lists
 // import AlertMessage from '../Components/AlertMessage'
 // Styles
-import styles from './Styles/ViewCustomersScreenStyle'
+import styles from './Styles/ViewProductScreenStyle'
 
 import _ from 'lodash';
-var arr = require('../customer_data.js')
+var arr = require('../sch.js')
 
 
 
@@ -76,13 +76,13 @@ class ViewCustomersScreen extends React.Component {
     return (
       <TouchableOpacity style={styles.row}>
         <View style={styles.cell}>
-          <Text style={styles.label}>{rowData.CustomerName}</Text>
+          <Text style={styles.label}>{rowData.Status}</Text>
         </View>
         <View style={styles.cell}>
-        <Text style={styles.label}>{rowData.PhoneNo}</Text>
+        <Text style={styles.label}>{rowData.configration}</Text>
         </View>
         <View style={styles.cell}>
-          <Text style={styles.label}>{rowData.Region}</Text>
+          <Text style={styles.label}>{rowData.weight}</Text>
         </View>
         <Icon size={10} name='chevron-right' style={{color:'blue',marginTop:5}} />
 
@@ -135,7 +135,7 @@ class ViewCustomersScreen extends React.Component {
       <View style={styles.container}>
         <View style={{backgroundColor:'#4075C0'}}>
           <Text style={{textAlign:'center',marginTop:20,marginBottom:20, fontWeight:'600',
-          fontSize:20, color: 'white'}}>List of Customers</Text>
+          fontSize:20, color: 'white'}}>List of Products</Text>
         </View>
 
         <ListView

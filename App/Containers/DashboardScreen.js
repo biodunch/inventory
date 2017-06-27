@@ -35,24 +35,24 @@ export default class TopBarTextExample extends PureComponent<void, *, State> {
       { key: '1', title: 'Distributors',
         grid :[
           {title: 'Add Distributor', color: '#66DE99',mode : 'ADD'},
-          {title: ' Manage Distributor', color: 'brown', mode : 'VIEW'},
+          {title: ' Manage Distributor', color: '#ED6247', mode : 'VIEW'},
           {title: ' Track Sales', color: '#4075C0', mode : 'SALES'},
-          {title: ' Delete Distributor', color: '#e73536', mode : 'DELETE'}
+          {title: ' Delete Distributor', color: 'brown', mode : 'DELETE'}
         ]
       },
       { key: '2', title: 'Customers',
       grid :[
         {title: 'Add Sec. Customer', color: '#88ED47', mode : 'ADD'},
-        {title: ' View Inventory', color: '#935765', mode : 'VIEW'},
+        {title: ' View Inventory', color: '#ED6247', mode : 'VIEW'},
         {title: ' Track Purchases', color: '#4075C0', mode : 'VIEW'},
         {title: ' Delete Sec. Customer', color: 'brown',mode : 'DELETE' }
       ] },
       { key: '3', title: 'Products',
       grid :[
         {title: 'Approve Products', color: '#88ED47',mode : 'APPROVE'},
-        {title: ' Manage Products', color: '#935765', mode : 'MANAGE'},
+        {title: ' Manage Products', color: '#ED6247', mode : 'PRODUCT'},
         {title: ' View Sales', color: '#4075C0', mode : 'SALES'},
-        {title: ' Delete Products', color: '#e73536', mode : 'DELETE'}
+        {title: ' Delete Products', color: 'brown', mode : 'DELETE'}
       ] },
     ],
   };
