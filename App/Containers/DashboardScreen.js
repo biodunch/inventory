@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react';
 import { StyleSheet } from 'react-native';
 import { TabViewAnimated, TabBar } from 'react-native-tab-view';
 import SimplePage from './SimplePage';
+import {Colors} from '../Themes'
 
 import type { NavigationState } from 'react-native-tab-view/types';
 
@@ -99,7 +100,7 @@ export default class TopBarTextExample extends PureComponent<void, *, State> {
           <SimplePage
             state={route.grid}
             transition={this.props.navigation}
-            style={{ backgroundColor: '#4caf50' }}
+            // style={{  }}
           />
         );
       default:
@@ -123,18 +124,19 @@ export default class TopBarTextExample extends PureComponent<void, *, State> {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    paddingTop:10
   },
   tabbar: {
-    backgroundColor: '#222',
+    backgroundColor: Colors.bloodOrange,
   },
   tab: {
     width: 140,
   },
   indicator: {
-    backgroundColor: '#ffeb3b',
+    backgroundColor: '#fff',
   },
   label: {
     color: '#fff',
-    fontWeight: '800',
+    fontWeight: '600',
   },
 });

@@ -74,7 +74,7 @@ class ViewCustomersScreen extends React.Component {
   *************************************************************/
   renderRow (rowData) {
     return (
-      <TouchableOpacity style={styles.row}>
+      <TouchableOpacity style={styles.row} >
         <View style={styles.cell}>
           <Text style={styles.label}>{rowData.Status}</Text>
         </View>

@@ -69,7 +69,9 @@ class ListviewSectionsExample extends React.Component {
       justifyContent: 'center',
       alignItems: 'center',
       margin: Metrics.baseMargin,
-      backgroundColor: rowData.color,
+      // backgroundColor: '#E9E9EF',
+      borderWidth:1,
+      borderColor:rowData.color,
       borderRadius: Metrics.smallMargin}}
       onPress={() =>{
         let location = ''
@@ -101,7 +103,15 @@ class ListviewSectionsExample extends React.Component {
 
       }>
         {/* {myIcon} */}
-        <Text style={styles.boldLabel}> {rowData.title}</Text>
+        <Text style={{
+          color:rowData.color,
+          fontWeight: 'bold',
+          alignSelf: 'center',
+          textAlign: 'center',
+          alignItems: 'center',
+          marginBottom: Metrics.smallMargin,
+          fontSize:25
+        }}> {rowData.title}</Text>
         {/* <Text style={styles.label}>{rowData.description}</Text> */}
       </TouchableOpacity>
     )
